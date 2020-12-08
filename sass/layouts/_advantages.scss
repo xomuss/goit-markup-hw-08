@@ -1,0 +1,96 @@
+.advantages {
+  margin-bottom: 94px;
+
+  &.list {
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+
+  &.list .item {
+    @include for-size(tablet) {
+      width: calc((100% - 60px)/2);  
+      margin: 15px;
+    }
+  }
+  
+  &.list .item {
+    @include for-size(desktop) {
+      width: calc((100% - 8 * 15px)/4);  
+      margin: 15px;
+    }
+  }
+}
+
+
+
+@include for-size (mobile-only) {
+  .advantages.list .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.advantages.list .item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-color: $secondary-bg-color;
+  background-position: center;
+}
+
+.advantages.list {
+
+  .antena::before {
+    background-image: url(../images/icons/antenna-1.png);
+  }
+
+  .clock::before {
+    background-image: url(../images/icons/clock-1.png);
+  }
+
+  .diagram::before {
+    background-image: url(../images/icons/diagram-1.png);
+  }
+
+  .astronaut::before {
+    background-image: url(../images/icons/astronaut-1.png);
+  }
+}
+
+.advantages.list .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.advantages .section-title {
+  display: none;
+}
+
+.advantages {
+  
+  p {
+    color: $secondary-text-colr;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+  
+      @include for-size(mobile) {
+        text-align: center;
+      }
+  }  
+  
+}

@@ -1,0 +1,45 @@
+.button {
+  background-color: $secondary-bg-color;
+  color: $primary-text-color;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+
+  &.primary:hover, 
+  &.primary:focus {
+  background-color: $activ-text-color;
+  color: $primary-bg-color;
+  box-shadow: 
+  0px 3px 1px rgba(0, 0, 0, 0.1), 
+  0px 1px 2px rgba(0, 0, 0, 0.08), 
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  &.primary {
+  background-color: $secondary-bg-color;
+  color: $primary-text-color;
+
+  transition: $time-functiom;
+  }
+
+  &.secondary {
+  background-color: $activ-text-color;
+  color: $primary-bg-color;
+  }
+
+  &.secondary.current {
+  background-color: $activ-text-color;
+  color: $primary-bg-color;
+  box-shadow: 
+  0px 3px 1px rgba(0, 0, 0, 0.1), 
+  0px 1px 2px rgba(0, 0, 0, 0.08), 
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  }
+}     

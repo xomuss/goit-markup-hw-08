@@ -1,0 +1,37 @@
+.examples {
+  margin-bottom: 94px;
+
+  &.list {
+    display: flex;
+    height: 294px;
+  }
+
+  &.list li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.thumb {
+  position: relative;
+  height: 294px;
+  overflow: hidden;
+
+  h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  margin: 0;
+  padding-top: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  background: rgba(47, 48, 58, 0.8);
+  }
+}  

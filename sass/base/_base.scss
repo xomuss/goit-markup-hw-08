@@ -1,0 +1,44 @@
+body {
+  background-color: #fff;
+  color: $primary-text-color;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+
+  *, ::after, ::before {
+    outline: 2px solid red;
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0px 15px;
+    
+    @include for-size(mobile) {
+      width: 480px;
+    }
+
+    @include for-size(tablet) {
+      width: 768px;
+    }
+
+    @include for-size(desktop) {
+      width: 1200px;
+    }
+  }
+
+  .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+  }
