@@ -11,6 +11,12 @@
   }
 }
 
+@include for-size(desktop-only) {
+  .examples {
+    display: none;
+  }
+}
+
 .thumb {
   position: relative;
   height: 294px;

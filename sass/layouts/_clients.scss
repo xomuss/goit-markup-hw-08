@@ -4,6 +4,8 @@
 
   .list {
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 
  .item {
@@ -13,8 +15,16 @@
     width: 170px;
     height: 90px;
     transition: $time-functiom;
+    margin: 15px;
   }
 }
+
+// @include for-size(mobile) {
+//   .clients .item {
+//   width: calc((100% - 4 * 15px)/2);
+//   margin: 15px;
+//   }
+// }
 
 .clients .item:hover,
 .clients .item:focus {
@@ -58,6 +68,6 @@
 }
 
 
-.clients .item:not(:last-child) {
-    margin-right: 30px;
-}
+// .clients .item:not(:last-child) {
+//     margin-right: 30px;
+// }

@@ -42,16 +42,26 @@
 }
 
 .team.list {
-  display: flex;
-
-  > li {
-    width: calc((100%-90)/4);
-  } 
-
-  > li:not(:last-child) {
-    margin-right: 30px;
-  }
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  
+    > li {
+      width: calc((100% - 60px)/2);
+      margin: 15px;
+    }      
+  }    
+  // > li:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
+
+@include for-size(desktop) {
+  .team.list > li {
+  width: calc((100% - 8 * 15px)/4);  
+  }
+} 
 
 .sn-icon {
 display: flex;
