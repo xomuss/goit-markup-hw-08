@@ -22,7 +22,7 @@ body {
   padding: 0px 15px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -309,7 +309,7 @@ body {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .advantages h3 {
     text-align: center;
   }
@@ -511,20 +511,63 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer {
+    height: 100%;
+  }
+}
+
 .footer .header-link {
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .footer .header-link {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-address > span {
   color: #ffffff;
 }
 
-.footer .container {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .sn-links {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
-.footer .container .contact-info {
-  margin-right: 70px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .container {
+    position: relative;
+  }
+  .sn-links {
+    position: absolute;
+    top: 0;
+    right: 89px;
+  }
+  .contact-info {
+    margin-left: 61px;
+    margin-bottom: 60px;
+  }
+  .footer-input {
+    margin-left: 151px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+  }
+  .contact-info {
+    margin-right: 70px;
+  }
+  .sn-links {
+    margin-top: 12px;
+    margin-right: 93px;
+  }
 }
 
 .join-us {
@@ -538,8 +581,10 @@ body {
   display: block;
 }
 
-.sn-links {
-  margin-top: 12px;
+@media screen and (max-width: 1199px) {
+  .join-us {
+    text-align: center;
+  }
 }
 
 .footer .sn-icon .item {
@@ -571,6 +616,12 @@ body {
   line-height: 1.71;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-address {
+    align-items: center;
+  }
+}
+
 .footer-address a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -589,6 +640,13 @@ body {
   color: #ffffff;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-input {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
 .footer-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -596,7 +654,6 @@ body {
 }
 
 .footer-form {
-  margin-left: 93px;
   margin-top: 12px;
 }
 
@@ -607,6 +664,15 @@ body {
   align-items: center;
   justify-content: center;
   display: inline-flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form .button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+  }
 }
 
 .footer-form .button:after {

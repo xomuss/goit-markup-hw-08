@@ -3,9 +3,16 @@
   height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
+  @include for-size(desktop-only) {
+    height: 100%;
+  }
 
  .header-link {
     color: #ffffff;
+    @include for-size(mobile-only) {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
@@ -13,13 +20,53 @@
   color: #ffffff;
 }
 
-.footer .container {
-  display: flex;
+@include for-size (mobile-only) {
+  .sn-links {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .container {
+    position: relative;
+  }
+
+  .sn-links {
+    position: absolute;
+    top: 0;
+    right: 89px;
+  }
+
+  .contact-info {
+    margin-left: 61px;
+    margin-bottom: 60px;
+  }
+
+  .footer-input {
+    margin-left: 151px;
+  }
+}
+
+
+@include for-size(desktop){
+  .footer .container {
+    display: flex;
+  }
 
   .contact-info {
     margin-right: 70px;
   }
-}
+
+  .sn-links {
+    margin-top: 12px;
+    margin-right: 93px;
+    }
+}  
+
+  
+  
+// }
 
 .join-us {
 font-weight: bold;
@@ -30,11 +77,15 @@ color: #fff;
 margin-bottom: 20px;
 margin-top: 0;
 display: block;
+
+  @include for-size(desktop-only) {
+    text-align: center;
+  }
 }
 
-.sn-links {
-margin-top: 12px;
-}
+
+
+
 
 .footer .sn-icon {
   .item {
@@ -66,7 +117,11 @@ margin-top: 12px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;    
+  line-height: 1.71;
+  
+  @include for-size(mobile-only) {
+    align-items: center;
+  }
 
   a {
     color: rgba(255, 255, 255, 0.6);
@@ -86,15 +141,19 @@ margin-top: 12px;
   background-color: $third-bg-color;
   color: #ffffff;
 
+  @include for-size(desktop-only) {
+    max-width: 450px;
+    width: 100%;
+  }  
+
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
-    }
+  }
 }
 
 .footer-form {
-  margin-left: 93px;
   margin-top: 12px;
 
   .button {
@@ -104,14 +163,21 @@ margin-top: 12px;
     align-items: center;
     justify-content: center;
     display: inline-flex;
+      @include for-size(desktop-only){
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 10px;
+      } 
   }
 
-  .button:after {
-    display: inline-block;
-    content: "";
-    width: 24px;
-    height: 24px;
-    background-image: url(../images/icons/icon-send.svg);
-    margin-left: 10px;
-  }
 }  
+
+.footer-form .button:after {
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icons/icon-send.svg);
+  margin-left: 10px;
+}
