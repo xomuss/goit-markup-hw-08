@@ -26,9 +26,14 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff
+  color: #ffffff;
 
+  @include for-size(desktop-only) {
+    font-size: 26px;
+  }
 }
+
+
 
 .hero button {
   font-weight: 700;
