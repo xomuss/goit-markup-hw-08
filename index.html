@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-  <!-- <header class="page-header">
+  <header class="page-header">
     <nav class="container nav-flex">
       <a class="header-link" href="./index.html">
         <span class="name-company">Web</span>Studio          
@@ -58,16 +58,16 @@
         </svg>
       </button>    
     </nav>
-  </header> -->
+  </header>
 
-    <!-- <main> -->
+    <main>
         <!--шапка-->
         <section class="hero ">
             <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
             <button class="button secondary" data-modal-open>Заказать услугу</button>
         </section>
         <!--особенности-->
-        <!-- <section class="advantages">
+        <section class="advantages">
             <div class="container">
                 <h2 class="section-title">особенности и преимущества</h2>
                 <ul class="advantages list">
@@ -90,41 +90,56 @@
                 </ul>
     
             </div>
-        </section> -->
+        </section>
         <!--примеры-работ-->
-        <!-- <section class="examples">
+        <section class="examples">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="examples list">
                 <li>
                     <div class="thumb" style="height: 294px;">
-                      <img src="./images/1.svg" width="370" alt="картинка 1">
+                      <picture>
+                        <source srcset="./images/desktop/box1_1x.jpg 1x, ./images/desktop/box1_2x.jpg 2x" media="(min-width: 1200px)">
+                        <img src="./images/1.svg" width="370" alt="картинка 1">    
+                      </picture>
+                      
                       <h3>Десктопные приложения</h3>
                     </div>
                 </li>
                 <li>
                     <div class="thumb" style="height: 294px;">
-                      <img src="./images/2.svg" width="370" alt="картинка 2">
+                      <picture>
+                        <source srcset="./images/desktop/box2_1x.jpg 1x, ./images/desktop/box2_2x.jpg 2x" media="(min-width: 1200px)">
+                        <img src="./images/2.svg" width="370" alt="картинка 2">
+                      </picture>
                       <h3>Мобильные приложения</h3>
                     </div>  
                 </li>
                 <li>
                     <div class="thumb" style="height: 294px;">
-                      <img src="./images/3.svg" width="370" alt="картинка 3">
+                      <picture>
+                        <source srcset="./images/desktop/box3_1x.jpg 1x, ./images/desktop/box3_2x.jpg 2x" media="(min-width: 1200px)">
+                        <img src="./images/3.svg" width="370" alt="картинка 3">
+                      </picture>
                       <h3>Дизайнерские решения</h3>
                     </div>
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
         <!--команда-->
-        <!-- <section class="team">
+        <section class="team">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
             <ul class="team list">
                 <li>
                     <figure>
-                        <img class="foto" src="./images/Product-Designer.jpg" width="270" alt="Product Designer">
+                        <picture>
+                          <source srcset="./images/desktop/pdesigner1x.jpg 1x, ./images/desktop/pdesigner2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/pdesigner1x.jpg 1x, ./images/tablet/pdesigner2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mobile/pdesigner1x.jpg 1x, ./images/mobile/pdesigner2x.jpg 2x" media="(max-width: 767px)">                         
+                            <img class="foto" src="./images/Product-Designer.jpg"  alt="Product Designer">
+                          </picture>
                         <figcaption>
                             <h3>Игорь Демьяненко</h3>
                             <p>Product Designer</p>
@@ -155,7 +170,12 @@
                 </li>
                 <li>
                     <figure>
-                        <img class="foto" src="./images/Frontend-Developer.jpg" width="270" alt="Frontend Developer">
+                          <picture>
+                            <source srcset="./images/desktop/pm1x.jpg 1x, ./images/desktop/pm2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/pm1x.jpg 1x, ./images/tablet/pm2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mobile/pm1x.jpg 1x, ./images/mobile/pm2x.jpg 2x" media="(max-width: 767px)">                         
+                            <img class="foto" src="./images/Frontend-Developer.jpg"  alt="Frontend Developer">
+                          </picture>
                         <figcaption>
                             <h3>Ольга Репина</h3>
                             <p>Frontend Developer</p>
@@ -186,7 +206,12 @@
                 </li>
                 <li>
                     <figure>
-                        <img class="foto" src="./images/Marketing.jpg" width="270" alt="Marketing">
+                          <picture>
+                            <source srcset="./images/desktop/marketing1x.jpg 1x, ./images/desktop/marketing2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/marketing1x.jpg 1x, ./images/tablet/marketing2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mobile/marketing1x.jpg 1x, ./images/mobile/marketing2x.jpg 2x" media="(max-width: 767px)">                         
+                            <img class="foto" src="./images/Marketing.jpg"  alt="Marketing">
+                          </picture>
                         <figcaption>
                             <h3>Николай Тарасов</h3>
                             <p>Marketing</p>
@@ -217,7 +242,12 @@
                 </li>
                 <li>
                     <figure>
-                        <img class="foto" src="./images/UI-Designer.jpg" width="270" alt="UI Designer">
+                        <picture>
+                          <source srcset="./images/desktop/uidesigner1x.jpg 1x, ./images/desktop/uidesigner2x.jpg 2x" media="(min-width: 1200px)">
+                          <source srcset="./images/tablet/uidesigner1x.jpg 1x, ./images/tablet/uidesigner2x.jpg 2x" media="(min-width: 768px)">
+                          <source srcset="./images/mobile/uidesigner1x.jpg 1x, ./images/mobile/uidesigner2x.jpg 2x" media="(max-width: 767px)">                         
+                          <img class="foto" src="./images/UI-Designer.jpg"  alt="UI Designer">
+                        </picture>
                         <figcaption>
                             <h3>Михаил Ермаков</h3>
                             <p>UI Designer</p>
@@ -248,48 +278,48 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
 
                 <!--клиенты-->
-        <!-- <section class="clients container">
+        <section class="clients container">
             <h2 class="section-title">Постоянные клиенты</h2>
             <ul class="list">
               <li class="item">
-                <svg class="logo-1" width=170 height=90>
+                <svg class="logo-1"  width=100% height=90>
                   <use href="./images/icons/symbol-defs.svg#logo-1"></use>
                 </svg>
               </li>
               <li class="item">
-                <svg class="logo-2" width=170 height=90>
+                <svg class="logo-2"  width=100% height=90>
                   <use href="./images/icons/symbol-defs.svg#logo-2"></use>
                 </svg>
               </li>
               <li class="item">
-                <svg class="logo-3" width=170 height=90>
+                <svg class="logo-3"  width=100% height=90>
                   <use href="./images/icons/symbol-defs.svg#logo-3"></use>
                 </svg>
               </li>
               <li class="item">
-                <svg class="logo-4" width=170 height=90>
+                <svg class="logo-4"  width=100% height=90>
                   <use href="./images/icons/symbol-defs.svg#logo-4"></use>
                 </svg>
               </li>
               <li class="item">
-                <svg class="logo-5" width=170 height=90>
+                <svg class="logo-5"  width=100% height=90>
                   <use href="./images/icons/symbol-defs.svg#logo-5"></use>
                 </svg>
               </li>
               <li class="item">
-                <svg class="logo-6" width=170 height=90>
+                <svg class="logo-6"  width=100% height=90>
                   <use href="./images/icons/symbol-defs.svg#logo-6"></use>
                 </svg>
               </li>
             </ul>
-        </section> -->
+        </section>
         
-    <!-- </main> -->
+    </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
               <div class="contact-info">
                 <a class="header-link" href="./index.html">
@@ -339,7 +369,7 @@
                 <button class="button secondary">Подписаться</button>
               </form>          
         </div>
-  </footer> -->
+  </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="close-button" data-modal-close>

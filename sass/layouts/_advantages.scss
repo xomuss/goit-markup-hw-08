@@ -1,5 +1,12 @@
 .advantages {
-  margin-bottom: 94px;
+  @include for-size(desktop-only) {
+    margin-bottom: 60px;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 94px;
+  }
+  
 
   &.list {
     @include for-size(tablet) {

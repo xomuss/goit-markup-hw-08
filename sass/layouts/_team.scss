@@ -1,8 +1,18 @@
 .team {
-  > div {
-    padding-bottom: 94px;
-    padding-top: 94px;
+  @include for-size(desktop-only){
+    > div {
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
   }
+
+  @include for-size(desktop){
+    > div {
+      padding-bottom: 94px;
+      padding-top: 94px;
+    }
+  }
+  
 
   p {
     color: $secondary-text-colr;
@@ -33,7 +43,7 @@
     0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    height: 428px;
+    // height: 428px;
   }
 
   .foto {
@@ -51,7 +61,13 @@
       width: calc((100% - 60px)/2);
       margin: 15px;
     }      
-  }    
+
+    
+  }  
+  
+  .foto {
+    width: 100%;
+  }
   // > li:not(:last-child) {
   //   margin-right: 30px;
   // }

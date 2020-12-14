@@ -1,20 +1,84 @@
 .hero {
   text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
-  margin-bottom: 94px;
-  height: 600px;
+  
+  
+  
   background-color: $third-bg-color;
-  background-image: linear-gradient( 
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include for-size(mobile-only) {
+  padding-top: 118px;
+    margin-bottom: 64px;
+    height: 400px;
+    background-image: linear-gradient( 
       to right,
    rgba(47, 48, 58, 0.4), 
    rgba(47, 48, 58, 0.4)
    ), 
-   url(../images/hero-bcg.jpg);
-  background-repeat: no-repeat;
-  max-width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
+   url(../images/mobile/header1x.jpg);
+
+   @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient( 
+      to right,
+   rgba(47, 48, 58, 0.4), 
+   rgba(47, 48, 58, 0.4)
+   ), 
+   url(../images/mobile/header2x.jpg);
+  }
+  }
+
+  @include for-size(tablet) {
+    padding-top: 118px;
+    margin-bottom: 60px;
+    height: 400px;
+    background-image: linear-gradient( 
+      to right,
+   rgba(47, 48, 58, 0.4), 
+   rgba(47, 48, 58, 0.4)
+   ), 
+   url(../images/tablet/header1x.jpg);
+
+   @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient( 
+      to right,
+   rgba(47, 48, 58, 0.4), 
+   rgba(47, 48, 58, 0.4)
+   ), 
+   url(../images/tablet/header2x.jpg);
+  }
+  }
+
+  @include for-size(desktop) {
+    padding-bottom: 200px;
+  padding-top: 200px;
+    height: 600px;
+    margin-bottom: 94px;
+    background-image: linear-gradient( 
+      to right,
+   rgba(47, 48, 58, 0.4), 
+   rgba(47, 48, 58, 0.4)
+   ), 
+   url(../images/desktop/header1x.jpg);
+
+   @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient( 
+      to right,
+   rgba(47, 48, 58, 0.4), 
+   rgba(47, 48, 58, 0.4)
+   ), 
+   url(../images/desktop/header2x.jpg);
+  }
+  }
 }
 
 
