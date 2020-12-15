@@ -161,7 +161,7 @@ transition: $time-functiom;
   .item {
     @include for-size(mobile-only) {
       margin-bottom: 40px;
-      
+
     }
     position: relative;
   }
@@ -179,6 +179,18 @@ transition: $time-functiom;
   transition: opacity $time-functiom;
 
   opacity: 0;
+
+  @include for-size(mobile-only) {
+    left: 50%;
+    transform: translate(-50%, 100%);
+    width: 18%;
+  }
+  }
+}
+
+@include for-size(mobile-only) {
+  .site-nav .item.current-line {
+    display: inline-block;
   }
 }
 
@@ -195,9 +207,10 @@ background-color: $activ-text-color;
 opacity: 1;
 
   @include for-size(mobile-only) {
-    width: 20%;
+    width: 100%;
     left: 50%;
     transform: translate(-50%, 100%);
+    
   }
 }
 

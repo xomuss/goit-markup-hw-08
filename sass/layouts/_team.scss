@@ -44,6 +44,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     // height: 428px;
+    @include for-size(desktop-only) {
+      padding-bottom: 23px;
+    }
   }
 
   .foto {
@@ -52,6 +55,12 @@
 }
 
 .team.list {
+  @include for-size (mobile-only) {
+    > li:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @include for-size(tablet) {
     display: flex;
     flex-wrap: wrap;

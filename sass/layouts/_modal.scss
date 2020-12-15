@@ -118,7 +118,7 @@ font-size: 14px;
 line-height: 1.71;
 color: $secondary-text-colr;
 margin-left: 7px;
-
+margin-right: auto;
 }
 
 .label-checkbox {
@@ -197,6 +197,7 @@ color: $primary-text-color;
   height: 15px;
   border: 2px solid $primary-text-color;
   border-radius: 2px;
+  margin-left: auto;
 }
 
 .checkbox:checked + .checkbox-icon {
